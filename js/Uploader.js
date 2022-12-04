@@ -199,8 +199,7 @@ function TableCreator(TableID, FolderName) {
                     }
                     else {
                         return LowData;
-                    }
-                    
+                    }                    
                 },
             },
             {

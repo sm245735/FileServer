@@ -70,25 +70,25 @@ function TableCreator(TableID, FolderName) {
                 render: function (data, type) {
                     let LowData = data.toLowerCase();
                     if (LowData == ".txt") {
-                        return '<img src="./assets/img/txt-icon.png" style="height:30px;" alt="Txt">';
+                        return '<div style="display:none;">0</div><img src="./assets/img/txt-icon.png" style="height:30px;" alt="Txt">';
                     }
                     if (LowData == ".xlsx" || LowData == ".xls") {
-                        return '<img src="./assets/img/Excel-icon.png" style="height:30px;" alt="Xlsx/xls">';
+                        return '<div style="display:none;">1</div><img src="./assets/img/Excel-icon.png" style="height:30px;" alt="Xlsx/xls">';
                     }
                     if (LowData == ".doc" || LowData == ".docx") {
-                        return '<img src="./assets/img/Word-icon.png" style="height:30px;" alt="Doc/Docx">';
+                        return '<div style="display:none;">2</div><img src="./assets/img/Word-icon.png" style="height:30px;" alt="Doc/Docx">';
                     }
                     if (LowData == ".ppt" || LowData == ".pptx") {
-                        return '<img src="./assets/img/PowerPoint-icon.png" style="height:30px;" alt="Ppt/Pptx">';
+                        return '<div style="display:none;">3</div><img src="./assets/img/PowerPoint-icon.png" style="height:30px;" alt="Ppt/Pptx">';
                     }
                     if (LowData == ".jpeg" || LowData == ".jpg" || LowData == ".png") {
-                        return '<img src="./assets/img/MetroUI-Apps-Windows8-Photos-icon.png" style="height:30px;" alt="Jpeg/Jpg/Png">';
+                        return '<div style="display:none;">4</div><img src="./assets/img/MetroUI-Apps-Windows8-Photos-icon.png" style="height:30px;" alt="Jpeg/Jpg/Png">';
                     }
-                    if (LowData == ".rar" || LowData == ".zip" || LowData == ".7z") {
-                        return '<img src="./assets/img/Rar-removebg-preview.png" style="height:30px;" alt="Rar/Zip/7z">';
+                    if (LowData == ".rar" || LowData == ".zip" || LowData == ".7z" || LowData == ".tar" || LowData == ".gz") {
+                        return '<div style="display:none;">5</div><img src="./assets/img/Rar-removebg-preview.png" style="height:30px;" alt="Rar/Zip/7z">';
                     }
                     if (LowData == ".pdf") {
-                        return '<img src="./assets/img/PDF_file_icon.png" style="height:30px;" alt="Pdf">';
+                        return '<div style="display:none;">6</div><img src="./assets/img/PDF_file_icon.png" style="height:30px;" alt="Pdf">';
                     }
                     else {
                         return LowData;
@@ -113,7 +113,6 @@ function TableCreator(TableID, FolderName) {
                 data: "UpdDt",
                 width: "12%",
             }
-
         ],
     });
 }
